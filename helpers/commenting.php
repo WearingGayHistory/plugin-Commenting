@@ -142,7 +142,7 @@ function commenting_render_comments($comments, $admin=false)
 
 function commenting_comment_uri($comment, $includeHash = true)
 {
-    $uri = PUBLIC_BASE_URL . $comment->path;
+    $uri = public_uri('/') . $comment->path;
 
     if($includeHash) {
         $uri .= "#comment-" . $comment->id;
