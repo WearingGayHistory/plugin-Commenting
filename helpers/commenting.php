@@ -1,5 +1,7 @@
 <?php
 
+require_once('HELPERS');
+
 function commenting_echo_comments($options = array('approved'=>true), $comments = null)
 {
     if( (get_option('commenting_allow_public') == 1) || (get_option('commenting_allow_public_view') == 1) || has_permission('Commenting_Comment', 'show') ) {
