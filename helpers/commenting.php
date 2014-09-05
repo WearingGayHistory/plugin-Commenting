@@ -1,6 +1,6 @@
 <?php
 
-require_once('HELPERS');
+require_once HELPERS;
 
 function commenting_echo_comments($options = array('approved'=>true), $comments = null)
 {
