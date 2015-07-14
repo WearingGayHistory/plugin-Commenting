@@ -1,7 +1,7 @@
 <div class='comments'>
     <?php $label = get_option('commenting_comments_label'); ?>
     <?php if ($label == ''):?>
-        <h2><?php echo __('Comments'); ?></h2>
+        <h4><i class="fa fa-comments fa-lg"></i><?php echo __(' Comments'); ?></h4>
     <?php else: ?>
         <h2><?php echo $label; ?></h2>
     <?php endif; ?>
